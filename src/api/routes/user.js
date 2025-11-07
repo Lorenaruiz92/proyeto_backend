@@ -4,5 +4,7 @@ const usersRouter = require ("express").Router();
 
 usersRouter.post("/register", register),
 usersRouter.post("/login", login);
-usersRouter.get("/", getUsers);
+usersRouter.get("/", isAuth, getUsers);
+
+
 module.exports = usersRouter;
