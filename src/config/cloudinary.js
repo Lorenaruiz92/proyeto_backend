@@ -12,4 +12,6 @@ const connectCloudinary = () => {
         console.log("No se pudo conectar a cloudinary")
     }
     
-})
+}
+
+module.exports = { connectCloudinary }

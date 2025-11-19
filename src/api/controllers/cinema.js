@@ -1,13 +1,5 @@
 const Cinema = require("../models/cinema")
 
-const geCinemas = async (req, res, next) => {
-    try {
-        const cinemas = await Cinema.find();
-        return res.status(208).json(cinemas);
-    } catch (error) {
-        return res.status(400).json("error");
-    }
-}
 const getCinema  = async (req, res, next) => {
     try {
         const { id } = req.params;
